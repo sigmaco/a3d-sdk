@@ -1,8 +1,6 @@
 # A3d Software Development Kit Collection
 The repository contains official Software Development Kits (SDKs) from Aureal 3D. These were found somewhere veeery deeply on the internet/internet archive. I've stored them here so you don't have to search for them - it wasn't an easy task to find these (at least for me).
 
-# What you can find here
-
 ## A3D 1.2 Software Development Kit
 1998/03/??
 
