@@ -1,4 +1,4 @@
-# A3d Software Development Kit
+# A3D Software Development Kit
 Aureal A3D is the landmark 3D audio technology which enables a realistic, natural and immerse audio experience by surrounding the listener with sounds in all three dimensions using only a single pair of ordinary speakers or headphones. Using advanced HRTF (head related transfer function) algorithms, A3D allows for interactive positioning of individual sound streams and listeners in true 3D space.  Application developers can easily utilize this powerful audio technology via the A3D API - a straightforward extension of the Microsoft DirectSound API.
 
 A3D is the standard in PC system 3D sound, and is supported by many hardware platforms. This growing list of hardware products include Aureal’s own line of PC audio semiconductors - the Vortex PCI-based digital audio accelerator - as well as licensee products such as the Diamond MonsterSound, and Crystal SoundFusion.
