@@ -1,8 +1,12 @@
-# A3d Software Development Kit Collection
-The repository contains official Software Development Kits (SDKs) from Aureal 3D. These were found somewhere veeery deeply on the internet/internet archive. I've stored them here so you don't have to search for them - it wasn't an easy task to find these (at least for me).
+# A3d Software Development Kit
+Aureal A3D is the landmark 3D audio technology which enables a realistic, natural and immerse audio experience by surrounding the listener with sounds in all three dimensions using only a single pair of ordinary speakers or headphones. Using advanced HRTF (head related transfer function) algorithms, A3D allows for interactive positioning of individual sound streams and listeners in true 3D space.  Application developers can easily utilize this powerful audio technology via the A3D API - a straightforward extension of the Microsoft DirectSound API.
+
+A3D is the standard in PC system 3D sound, and is supported by many hardware platforms. This growing list of hardware products include Aureal’s own line of PC audio semiconductors - the Vortex PCI-based digital audio accelerator - as well as licensee products such as the Diamond MonsterSound, and Crystal SoundFusion.
 
 ## A3D 1.2 Software Development Kit
 1998/03/??
+
+The Aureal SDK was designed to be simple to use, given an understanding of DirectSound API. In particular, A3D is a superset of the DS/DS3D API – the added functionality is supported through extensions to DS/DS3D.  This means you can use Microsoft’s industry standard DirectSound3D API, and with minimal modification to your code, enable the extended features of A3D Interactive.
 
 - A3D 1.2 API Documentation
 - A3D drivers (a3d.dll, A3D.vxd)
