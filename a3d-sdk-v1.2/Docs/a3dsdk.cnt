@@ -1,0 +1,55 @@
+:Base a3dsdk
+:Title A3D Interactive SDK Table of Contents
+1 A3D Interactive SDK
+2 Introduction=A3DSDK.AII001
+2 SDK Introduction=a3dsdk.SI_001
+2 Why Use A3D instead of DS3D?=a3dsdk.WUA001
+2 A3D Essentials
+3 A3D Essentials=a3dsdk.AIE001
+3 Initialization
+4 Initialization=a3dsdk.I__001
+4 Simple Creation and Initializatoin Using A3DCreate=a3dsdk.sca001
+4 Direct COM Method
+5 Direct COM Method=A3DSDK.DCM001
+5 Initializing A3D GUIDs=A3DSDK.IAG001
+3 A3D Extensions
+4 A3D Extensions=A3DSDK.AE_001
+4 Resource Manager
+5 Resource Manager=A3DSDK.RM_001
+5 Resource Manager Modes=A3DSDK.RMM001
+5 Sample Code=A3DSDK.SC_001
+5 Important Notes=A3DSDK.IN_001
+4 Enhanced Distance Modeling Control
+5 Enhanced Distance Modeling Control=A3DSDK.EDM001
+5 Sample Code=A3DSDK.SC_002
+4 Versioning and Capabilities Functions
+5 Versioning and Capabilities Functions=A3DSDK.VCF001
+5 IA3d2::RegisterVersion=A3DSDK.IR_001
+5 IA3d2::GetHardwareCaps=A3DSDK.IG_001
+5 IA3d2::GetSoftwareCaps
+6 IA3d2::GetSoftwareCaps=A3DSDK.IG_002
+6 Sample Code=A3DSDK.SC_003
+6 Important Note=A3DSDK.IN_002
+3 What to Bundle with Your Title=A3DSDK.WTB001
+2 A3D API Reference
+3 A3D API Reference=A3DSDK.AIA001
+3 IA3D.LIB Functions
+4 IA3D.LIB Functions=A3DSDK.IF_001
+4 A3dCreate=A3DSDK.A__001
+4 A3dInitialize=A3DSDK.A__003
+4 A3dUnitialize=A3DSDK.A__004
+3 IA3d Interface
+4 IA3d Interface=A3DSDK.II_001
+4 IA3d::GetHFAbsorbFactor=A3DSDK.IG_003
+4 IA3d::GetResourceManageMode=A3DSDK.IG_004
+4 IA3d::SetHFAbsorbFactor=A3DSDK.IS_001
+4 IA3d::SetResourceManagerMode=A3DSDK.IS_004
+3 IA3d2 Interface
+4 IA3d2 Interface=A3DSDK.II_002
+4 IA3d2::GetSoftwareCaps=A3DSDK.IG_005
+4 IA3d2::GetHardwareCaps=A3DSDK.IG_006
+4 IA3d2::RegisterVersion=A3DSDK.IR_002
+3 Structures
+4 Structures=A3DSDK.S__001
+4 A3DCAPS_HARDWARE=A3DSDK.A__005
+4 A3DCAPS_SOFTWARE=A3DSDK.A__006
