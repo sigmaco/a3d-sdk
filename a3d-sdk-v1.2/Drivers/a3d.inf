@@ -1,0 +1,12 @@
+[version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+AddReg=add.reg
+
+[add.reg]
+HKCR,A3d,,,"A3d Object"
+HKCR,A3d\CLSID,,,{d8f1eee0-f634-11cf-8700-00a0245d918b}
+HKCR,CLSID\{d8f1eee0-f634-11cf-8700-00a0245d918b},,,"A3d Object"
+HKCR,CLSID\{d8f1eee0-f634-11cf-8700-00a0245d918b}\InprocServer32,,,a3d.dll
+HKCR,CLSID\{d8f1eee0-f634-11cf-8700-00a0245d918b}\InprocServer32,"ThreadingModel",,"Apartment"

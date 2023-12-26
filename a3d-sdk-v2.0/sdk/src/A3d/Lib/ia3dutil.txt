@@ -1,0 +1,93 @@
+Static library ia3dutil.lib.
+
+Overview:
+  The purpose of this library is to facilitate the creation
+  of an A3D 2.0 object, verify that the returned A3D object
+  is certified by Aureal, and ensure that the proper registry
+  keys for A3D 2.0 exist.
+
+  Statically link this library into your build. Call
+  A3dInitialize on starting up your application, and
+  A3dCreate to initialize A3D. Once you’ve destroyed your
+  A3D interface objects, call A3dUninitialize on exiting
+  your application to clean up. Both the A3dInitialize and
+  A3dCreate calls will register the A3DAPI.DLL with your
+  system (this is required for A3D 2.0 to work), and the
+  A3dCreate call will also authenticate A3D as being
+  Aureal-certified.  There is some very brief sample
+  source code at the end of this document.
+
+  There are specific Registry settings needed by A3D 2.0 to
+  function via the COM interface.  Calling A3DCreate or
+  A3DInitialize will verify the settings and add them if
+  necessary.  If you do not use either of these functions,
+  call the A3DRegister function at the beginning of the 
+  game code to handle it.  
+
+
+Make file:
+
+  ia3dutil.mak    - Multi threaded lib release and debug.
+
+
+Build Notes:
+  ole32.lib needs to be linked with this file.
+
+
+Function Overview:
+  A3DInitialize
+        Initializes COM.  COM should be initialized ONCE per app
+	session.  While COM must be initialized before A3dCreate
+	is called, the app does not have to do it through
+	A3DInitialize.
+	
+  A3DUninitialize
+        Uninitializes COM.  COM should be uninitialized ONCE per
+	app session.  The A3D object must be Release()'d before
+	uninitializing.  While COM must be uninitialized, the app
+	does not have to do it through A3DUninitialize.
+
+  A3dRegister
+        Sets all A3D registry keys.  A3D 2.0 will not work
+	without them.  A3dCreate and A3DInitialize both call this
+	function, so if the app does not use either of those 
+	functions, A3dRegister must be called to ensure that
+	A3D 2.0 is properly registered on the target machine.
+	This function can be called repeatedly, during both the
+	current and subsequent app sessions, with no ill effects.
+
+  A3dCreate
+        Creates and verifies an A3D object.  COM must be 
+	initialized before this call will work.  The verification
+	passes only when the A3D installed on the machine has
+	been certified by Aureal.
+	Note: to destroy the A3D object, all pointers to 
+	the Listener, the Geometry object, the root A3D object,
+	and the Scenemanager must be Release()'d.
+
+
+Example code:
+  IA3d *gpA3D;
+
+  Initialize_A3D:
+  {
+    DWORD dwFeatures;
+
+    dwFeatures = A3D_1ST_REFLECTIONS
+      | A3D_LATE_REFLECTIONS
+      | A3D_DIRECT_PATH
+      | A3D_DISTANCE_MODEL
+      | A3D_OCCLUSIONS;
+
+    A3DInitialize();
+	A3dCreate (NULL, &gpA3D, NULL, dwFeatures);
+  }
+
+
+  Uninitialize_A3D:
+  {
+    gpA3D->Release;
+	gpA3D = NULL;
+
+    A3DUninitialize();
+  }

@@ -1,0 +1,36 @@
+
+Aureal A3D 3.0 SDK
+Release Notes
+
+
+
+A3DAPI Build v3.1
+February 11, 2000
+----------------------------------------------------------------------
+This is the first public release of the A3D 3.0 SDK.
+Feature additions, bug fixes, and known issues will be updated here,
+as new SDK releases are made.
+
+Features Added:
+ * See Readme.txt and the new 3.0 Documentation for a complete list of features.
+
+
+Bug(s) Fixed:
+
+ * This is the first release. Bug fixes in subsequent releases will appear here.
+
+
+Known Issues:
+
+ * This is the first release.
+   Known issues: these drivers have undergone testing on Aureal
+   and non-Aureal h/w. However, they have not been tested on all
+   platforms or all card and driver configurations.
+   We believe the feature set should be functional on all platforms,
+   with the following caveats:
+ 
+   Win2K: Reverb is currently not available on Win2K.
+          Until final release of Win2K, Aureal cannot guarantee
+	  that A3D will work on the OS. We have, however, tested core
+          A3D 3.0 features on Win2K and believe they are functional.
+

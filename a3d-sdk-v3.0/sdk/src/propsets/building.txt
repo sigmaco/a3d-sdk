@@ -1,0 +1,4 @@
+
+Aureal does not have permission to re-distribute the EAX header file.
+You can get this from the EAX SDK, http://www.creativelabs.com/.
+

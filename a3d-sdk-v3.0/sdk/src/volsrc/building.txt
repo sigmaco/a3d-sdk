@@ -1,0 +1,3 @@
+
+Aureal does not have permission to re-distribute DirectX files.
+You can get these from the DirectX SDK, http://www.microsoft.com/directx.
